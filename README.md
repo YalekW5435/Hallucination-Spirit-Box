@@ -8,8 +8,8 @@ It uses several parameters set inside whisper's CPP repository that you can adju
 this is not an audio engine, as doing so will treat this as mandatory audio feedback through your microphone, unless
 if you used the AI enigne as the source input audio (not available yet).
 This uses Port audio, whisper.cpp repository, and "ggml-base.bin" as the model.  You can also modify the model too, but PLEASE ENSURE you have at least one model!
-here is the link to the model:
 https://huggingface.co/ggerganov/whisper.cpp/blob/main/ggml-base.bin
+
 
 # In short:
 the device attempts to hallucinate itself based off of chaotic noise parameters, and common AI-training parameters found 
@@ -18,12 +18,16 @@ once done, it then outputs a series of words, short phrases and perhaps even sen
 
 Some things may not make sense, and stuff can repeat.  If you see too much stuff being repeated, you will need to slide, tap on your microphone hard, or use some 
 alternative method with your microphone.  to reset the tokenizations/memories that are kept track.  You can also adjust the main.cpp file inside this repository to fit as mentioned.
+# Installation:
+1.  [Copy one of these models listed here into SpiritBox.exe's directory](https://huggingface.co/ggerganov/whisper.cpp/blob/main/)
+2.  Run cmd and do the following (name of the model would be the one you just downloaded:
+3.  `SpiritBox.exe "PathToYourModel.bin"`
 
 # What was found while I was doing a session
 
 1.  It managed to find a random prompt that decoded to a phrase saying this: "[Mei Crying"].  Which meant it could actually say people's names, perhaps from the many video games, youtube videos, etc.
 that you all could have watched!  Also:
-2.  I actually read something while vibing this relating to "circuit breaker" when gemini made this for me, and suddenly:
+2.  I actually read something on google while vibing this relating to "circuit breaker" when gemini made this for me, and suddenly:
 The app decoded/said "circuit breaker" in the terminal.
 
 It may take a couple of minutes for this app to fully hallucinate, and once it is finished, you will experience a LOT of weird stuff!
