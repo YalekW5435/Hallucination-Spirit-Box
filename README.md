@@ -7,8 +7,7 @@ and heavily modified.
 It uses several parameters set inside whisper's CPP repository that you can adjust to fit your sessions.
 this is not an audio engine, as doing so will treat this as mandatory audio feedback through your microphone, unless
 if you used the AI enigne as the source input audio (not available yet).
-This uses Port audio, whisper.cpp repository, and "ggml-base.bin" as the model.  You can also modify the model too, but PLEASE ENSURE you have at least one model!
-https://huggingface.co/ggerganov/whisper.cpp/blob/main/ggml-base.bin
+This uses Port audio, whisper.cpp repository, and a ggml model you must download in order for this to work. Please see installation section for more details.
 
 
 # In short:
@@ -18,6 +17,7 @@ once done, it then outputs a series of words, short phrases and perhaps even sen
 
 Some things may not make sense, and stuff can repeat.  If you see too much stuff being repeated, you will need to slide, tap on your microphone hard, or use some 
 alternative method with your microphone.  to reset the tokenizations/memories that are kept track.  You can also adjust the main.cpp file inside this repository to fit as mentioned.
+
 # Installation:
 1.  [Copy one of these models listed here into SpiritBox.exe's directory](https://huggingface.co/ggerganov/whisper.cpp/blob/main/)
 2.  Run cmd and do the following (name of the model would be the one you just downloaded:
