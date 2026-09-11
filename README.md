@@ -8,6 +8,8 @@ It uses several parameters set inside whisper's CPP repository that you can adju
 this is not an audio engine, as doing so will treat this as mandatory audio feedback through your microphone, unless
 if you used the AI enigne as the source input audio (not available yet).
 This uses Port audio, whisper.cpp repository, and "ggml-base.bin" as the model.  You can also modify the model too, but PLEASE ENSURE you have at least one model!
+here is the link to the model:
+https://huggingface.co/ggerganov/whisper.cpp/blob/main/ggml-base.bin
 
 # In short:
 the device attempts to hallucinate itself based off of chaotic noise parameters, and common AI-training parameters found 
